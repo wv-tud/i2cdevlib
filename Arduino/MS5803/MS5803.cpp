@@ -33,7 +33,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ===============================================
 */
-#include "MS5803_I2C.h"
+#include "MS5803.h"
 
 const static uint8_t INIT_TRIES = 3;
 const static uint16_t PRESS_ATM_MBAR_DEFAULT = 1015;

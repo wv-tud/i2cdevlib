@@ -34,7 +34,9 @@ THE SOFTWARE.
 #ifndef _AK8963_H_
 #define _AK8963_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define AK8963_ADDRESS_00               0x0C
 #define AK8963_ADDRESS_01               0x0D

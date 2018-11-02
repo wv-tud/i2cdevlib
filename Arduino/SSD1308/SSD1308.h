@@ -37,6 +37,10 @@ THE SOFTWARE.
 
 #include <inttypes.h>
 
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
+
 // this is the 7-bit I2C address
 // which wone is used is determined by the D/C# pin.
 // with D/C# (pin 13) grounded, address is 0x3C

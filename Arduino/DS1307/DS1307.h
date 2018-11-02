@@ -34,7 +34,9 @@ THE SOFTWARE.
 #ifndef _DS1307_H_
 #define _DS1307_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 // comment this out if you already have a JeeLabs' DateTime class in your code
 // or if you don't need DateTime functionality

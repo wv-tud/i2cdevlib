@@ -33,7 +33,9 @@ THE SOFTWARE.
 #ifndef _HMC5843_H_
 #define _HMC5843_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define HMC5843_ADDRESS            0x1E // this device only has one address
 #define HMC5843_DEFAULT_ADDRESS    0x1E

@@ -33,7 +33,9 @@ THE SOFTWARE.
 #ifndef _L3GD20H_H_
 #define _L3GD20H_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define L3GD20H_ADDRESS           0x6B // I think this is correct.  See SAD in doc.
 #define L3GD20H_DEFAULT_ADDRESS   0x6B // I think this is correct.  See SAD in doc.

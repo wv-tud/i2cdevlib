@@ -33,7 +33,9 @@ THE SOFTWARE.
 #ifndef _ITG3200_H_
 #define _ITG3200_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define ITG3200_ADDRESS_AD0_LOW     0x68 // address pin low (GND), default for SparkFun IMU Digital Combo board
 #define ITG3200_ADDRESS_AD0_HIGH    0x69 // address pin high (VCC), default for SparkFun ITG-3200 Breakout board

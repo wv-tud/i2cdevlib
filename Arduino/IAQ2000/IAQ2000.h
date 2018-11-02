@@ -36,7 +36,9 @@ THE SOFTWARE.
 #ifndef _IAQ2000_H_
 #define _IAQ2000_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define IAQ2000_ADDRESS             0x5A
 #define IAQ2000_DEFAULT_ADDRESS     IAQ2000_ADDRESS

@@ -39,7 +39,10 @@ THE SOFTWARE.
 
 #define I2CDEV_SERIAL_DEBUG
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
+
 #include <avr/pgmspace.h>
 
 #define MS5803_ADDRESS

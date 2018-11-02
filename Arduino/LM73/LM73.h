@@ -7,7 +7,9 @@
 #ifndef _LM73_H_
 #define _LM73_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 // LM73-0
 #define LM73_0_ADDRESS_ADDR_FLT		0x48 // address pin is floating

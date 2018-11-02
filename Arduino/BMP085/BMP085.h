@@ -33,7 +33,10 @@ THE SOFTWARE.
 #ifndef _BMP085_H_
 #define _BMP085_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
+
 #include <math.h>
 
 #define BMP085_ADDRESS              0x77

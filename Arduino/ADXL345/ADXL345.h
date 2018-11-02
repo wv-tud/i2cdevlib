@@ -33,7 +33,9 @@ THE SOFTWARE.
 #ifndef _ADXL345_H_
 #define _ADXL345_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define ADXL345_ADDRESS_ALT_LOW     0x53 // alt address pin low (GND)
 #define ADXL345_ADDRESS_ALT_HIGH    0x1D // alt address pin high (VCC)

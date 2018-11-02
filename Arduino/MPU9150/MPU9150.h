@@ -37,7 +37,9 @@ THE SOFTWARE.
 #ifndef _MPU9150_H_
 #define _MPU9150_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 // Tom Carpenter's conditional PROGMEM code
 // http://forum.arduino.cc/index.php?topic=129407.0

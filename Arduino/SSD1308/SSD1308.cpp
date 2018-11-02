@@ -33,7 +33,6 @@ THE SOFTWARE.
 */
 
 #include "SSD1308.h"
-#include "I2Cdev.h"
 
 //#ifdef SSD1308_USE_FONT
 #include "fixedWidthFont.h"

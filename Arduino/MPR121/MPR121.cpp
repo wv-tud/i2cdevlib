@@ -34,7 +34,6 @@ THE SOFTWARE.
 */
 
 #include "MPR121.h"
-#include "I2Cdev.h"
 
 MPR121::MPR121(uint8_t address) :
   m_devAddr(address)

@@ -33,7 +33,9 @@ THE SOFTWARE.
 #ifndef _HTU21D_H_
 #define _HTU21D_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define HTU21D_DEFAULT_ADDRESS     0x40
 

@@ -38,6 +38,10 @@ THE SOFTWARE.
 
 #include <inttypes.h>
 
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
+
 // this is the 7-bit I2C address with the ADDR pin grounded
 #define MPR121_DEFAULT_ADDRESS 0x5A
 

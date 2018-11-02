@@ -33,7 +33,9 @@ THE SOFTWARE.
 #ifndef _L3G4200D_H_
 #define _L3G4200D_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define L3G4200D_ADDRESS           0x69
 #define L3G4200D_DEFAULT_ADDRESS   0x69

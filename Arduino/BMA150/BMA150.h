@@ -33,7 +33,9 @@ THE SOFTWARE.
 #ifndef _BMA150_H_
 #define _BMA150_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 #define BMA150_ADDRESS_00           0xA1                // Default Address
 #define BMA150_ADDRESS_01           0x38                // Used on the Atmel ATAVRSBIN1

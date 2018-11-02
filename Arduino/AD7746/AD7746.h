@@ -35,7 +35,9 @@ THE SOFTWARE.
 #ifndef _AD7746_H_
 #define _AD7746_H_
 
-#include "I2Cdev.h"
+#ifndef _I2CDEV_H_
+#include "../I2Cdev/I2Cdev.h"
+#endif
 
 
 #define AD7746_ADDRESS           0x48
